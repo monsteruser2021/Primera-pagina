@@ -1,0 +1,122 @@
+/* STYLES LISZT  */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+  }
+   
+  body {
+    --s: 82px; /* control the size */
+    --c1: #b2b2b2;
+    --c2: #ffffff;
+    --c3: #d9d9d9;
+    
+    --_g: var(--c3) 0 120deg,#0000 0;
+    background:
+      conic-gradient(from -60deg at 50% calc(100%/3),var(--_g)),
+      conic-gradient(from 120deg at 50% calc(200%/3),var(--_g)),
+      conic-gradient(from  60deg at calc(200%/3),var(--c3) 60deg,var(--c2) 0 120deg,#0000 0),
+      conic-gradient(from 180deg at calc(100%/3),var(--c1) 60deg,var(--_g)),
+      linear-gradient(90deg,var(--c1)   calc(100%/6),var(--c2) 0 50%,
+                            var(--c1) 0 calc(500%/6),var(--c2) 0);
+    background-size: calc(1.732*var(--s)) var(--s);
+  }
+  
+  .container {
+    width: 90%;
+    margin: auto,;
+  }
+
+  .showcase {
+    padding: 20px;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    color: black;
+    text-decoration: underline;
+    width: 100%;
+    background-color: white;
+    border-top: black solid 2px;
+    border-left: black solid 2px;
+    border-right: black solid 2px;
+  }
+
+  .parrafos {
+    display: inline-block;
+    margin: 0 20px;
+    margin-bottom: 20px;
+    width: 100%;
+    padding: 20px;
+    background-color: white;
+    border-bottom: black solid 2px;
+    border-left: black solid 2px;
+    border-right: black solid 2px;
+  }
+
+  .parrafos a {
+    padding: 10px 0;
+    color: black;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+  }
+
+  .parrafos img {
+    display: grid;
+    place-content: center;
+    width: 30%;
+    height: 400px;
+    margin: auto;
+    padding: 10px;
+  }
+
+  .volver-atras {
+    display: inline-block;
+    margin: 0 20px;
+    margin-bottom: 20px;
+    width: 100%;
+    padding-top: 30px;
+    padding-bottom: 20px;
+  }
+
+  .boton-volver-atras {
+    margin-top: 20px;
+  }
+
+  .footer {
+    background: #2f3640;
+    color: #ffffff;
+    font-size: 12px;
+    padding: 20px 0;
+    text-align: center;padding-bottom: 20px;
+}
+
+@media (max-width: 700px) {
+
+    .showcase .content {
+        width: 80%;
+        height: 80%;
+    }
+    
+    .parrafos img {
+        height: 500;
+        width: 270px;
+    }
+    }
+  
+  @media (max-width: 500px) {
+
+    .parrafos img {
+        height: 500;
+        width: 270px;
+    }
+  
+    .showcase .content{
+        width: 100%;
+        height: 80%;
+        padding: 60px 20 px;
+    }
+  
+  }
